@@ -1,0 +1,262 @@
+/** Screen sizes **/
+/** Text **/
+/** Button Mixin **/
+/** Banner Mixin **/
+/** TYPOGRAPHY **/
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+body h1 {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+body h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+body h3 {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+body h4 {
+  font-size: 1.2em;
+}
+body h5, body h6 {
+  font-size: 1em;
+}
+body p, body li {
+  color: #666;
+  line-height: 1.75em;
+  margin-bottom: 1.5em;
+}
+
+/** WW BUTTONS **/
+a.ww-button {
+  padding: .8em 2em;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80%;
+  color: #000;
+  letter-spacing: 1px;
+  background-color: transparent;
+  transition: background-color .5s, color .5s;
+}
+a.ww-button:hover, a.ww-button:active, a.ww-button:focus {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  border-color: transparent;
+}
+a.ww-button:visited {
+  text-decoration: none;
+}
+
+a.ww-banner-button {
+  padding: .8em 2em;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80%;
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: transparent;
+  transition: background-color .5s, color .5s;
+}
+a.ww-banner-button:hover, a.ww-banner-button:active, a.ww-banner-button:focus {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border-color: transparent;
+}
+a.ww-banner-button:visited {
+  text-decoration: none;
+}
+
+a.ww-bridesmaid-button {
+  padding: .8em 2em;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80%;
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: #000;
+  transition: background-color .5s, color .5s;
+  margin: 30px auto;
+  display: inline-block;
+}
+a.ww-bridesmaid-button:hover, a.ww-bridesmaid-button:active, a.ww-bridesmaid-button:focus {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+a.ww-bridesmaid-button:visited {
+  text-decoration: none;
+}
+
+/** BANNER AND SLIDER **/
+.slider {
+  position: relative;
+  height: 600px;
+}
+
+a.left-slider-control {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: rotateY(180deg);
+}
+
+a.right-slider-control {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+}
+
+.banner1 {
+  background: url("../images/hero_1015_ec.jpg") center;
+  background-size: cover;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 80px 0;
+  color: #fff;
+}
+.banner1 p {
+  color: #ede7e5;
+}
+
+.banner2 {
+  background: url("../images/hero_1015_gentshop.jpg") center;
+  background-size: cover;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 250px 0 0 0;
+  display: none;
+  color: #fff;
+}
+.banner2 p {
+  color: #fff;
+}
+
+.banner3 {
+  background: url("../images/hero_1015_swatch.jpg") center;
+  background-size: cover;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 250px 0 0 0;
+  display: none;
+  color: #000;
+}
+.banner3 h2 {
+  color: #fb0a4e;
+  margin-bottom: 0;
+  font-size: 90%;
+}
+.banner3 p {
+  color: #000;
+}
+
+/** HOW IT WORKS SECTION **/
+#how-it-works-section {
+  overflow: hidden;
+}
+
+#how-it-works-section h2 {
+  position: relative;
+}
+#how-it-works-section h2:before {
+  content: '';
+  position: absolute;
+  border-bottom: 1px #cacaca solid;
+  margin-left: -40px;
+  height: 100%;
+  width: 36%;
+  transform: translateY(-50%) translateX(-100%);
+  flaot: left;
+}
+#how-it-works-section h2:after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px #cacaca solid;
+  margin-left: 40px;
+  height: 100%;
+  width: 36%;
+  transform: translateY(-50%);
+  float: right;
+}
+
+.how-it-works {
+  padding: 0 40px;
+  text-align: center;
+}
+
+/** MERCHANDISING BOXES **/
+#merchandising-boxes {
+  background-color: #f5f2f1;
+  padding: 60px 0;
+}
+
+.merchandising-box {
+  margin-bottom: 40px;
+}
+.merchandising-box .ww-mb-caption {
+  padding: 10px 0 10px 5%;
+  background-color: #fff;
+  min-height: 75px;
+}
+.merchandising-box .ww-mb-caption .ww-mb-text {
+  font-size: 90%;
+  display: inline-block;
+  float: left;
+  width: 75%;
+}
+.merchandising-box .ww-mb-caption .ww-mb-text h1, .merchandising-box .ww-mb-caption .ww-mb-text h2, .merchandising-box .ww-mb-caption .ww-mb-text h3, .merchandising-box .ww-mb-caption .ww-mb-text h4, .merchandising-box .ww-mb-caption .ww-mb-text h5, .merchandising-box .ww-mb-caption .ww-mb-text h6, .merchandising-box .ww-mb-caption .ww-mb-text p, .merchandising-box .ww-mb-caption .ww-mb-text li {
+  margin-bottom: 0em;
+  line-height: normal;
+}
+.merchandising-box .ww-mb-caption .ww-mb-link {
+  width: 20%;
+  margin: 2.5% 2.5%;
+  float: right;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .merchandising-box .ww-button {
+    padding: .8em 1em;
+  }
+}
+
+/** FOOTER **/
+footer {
+  background-color: #726d6d;
+  padding: 20px 0;
+}
+footer p {
+  line-height: normal;
+  font-size: 90%;
+  letter-spacing: 1px;
+  margin-bottom: 0.4em;
+  color: #dad7d7;
+}
+footer p.small {
+  font-size: 70%;
+}
+footer p:first-of-type {
+  color: #f7a5a7;
+}

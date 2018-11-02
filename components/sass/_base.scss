@@ -1,0 +1,211 @@
+/** TYPOGRAPHY **/
+
+body {
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	h1 {
+		font-size: 1.8em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	h2 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	h3 {
+		font-size: 1.3em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	h4 {
+		font-size: 1.2em;
+	}
+	h5, h6 {
+		font-size: 1em;
+	}
+	p, li {
+		color: $text-color-body;
+		line-height: 1.75em;
+		margin-bottom: 1.5em;
+	}
+}
+
+/** WW BUTTONS **/
+
+a.ww-button {
+	@include button(#000, #000, transparent);
+}
+
+a.ww-banner-button {
+	@include button(#fff, #fff);
+}
+
+a.ww-bridesmaid-button {
+	@include button(#fff, transparent, #000);
+	margin: 30px auto;
+	display: inline-block;
+}
+
+/** BANNER AND SLIDER **/
+
+.slider {
+	position: relative;
+	height: 600px;
+}
+
+a.left-slider-control {
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	transform: rotateY(180deg);
+}
+a.right-slider-control {
+	position: absolute;
+	top: 50%;
+	right: 40px;
+}
+
+.banner1 { 
+	@include banner('hero_1015_ec.jpg');
+	padding: 80px 0;
+	color: $text-color-light;
+	p {
+		color: #ede7e5;
+	}
+	
+}
+
+.banner2 { 
+	@include banner('hero_1015_gentshop.jpg');
+	padding: 250px 0 0 0;
+	display: none;
+	color: $text-color-light;
+	p {
+		color: $text-color-light;
+	}
+	
+}
+
+.banner3 { 
+	@include banner('hero_1015_swatch.jpg');
+	padding: 250px 0 0 0;
+	display:none;
+	color: $text-color-dark;
+	h2 {
+		color: #fb0a4e;
+		margin-bottom: 0;
+		font-size: 90%;
+	}
+	p {
+		color: $text-color-dark;
+	}
+	
+}
+
+
+/** HOW IT WORKS SECTION **/
+
+#how-it-works-section {
+	overflow: hidden;
+}
+
+#how-it-works-section h2 {
+	position: relative;
+	&:before { // the horizontal line to the left of the h2
+		content: '';
+		  position: absolute;
+		  border-bottom: 1px #cacaca solid;
+		  margin-left: -40px;
+		  height: 100%;
+		  width: 36%;
+		  transform: translateY(-50%) translateX(-100%);
+		  flaot: left;
+	}
+	&:after { // the horizontal line to the right of the h2
+		content: '';
+		  position: absolute;
+		  border-bottom: 1px #cacaca solid;
+		  margin-left: 40px;
+		  height: 100%;
+		  width: 36%;
+		  transform: translateY(-50%);
+		  float: right;
+	}
+}
+
+.how-it-works {
+	padding: 0 40px;
+	text-align: center;
+}
+
+/** MERCHANDISING BOXES **/
+
+#merchandising-boxes {
+	background-color: #f5f2f1;
+	padding: 60px 0;
+}
+
+.merchandising-box {
+	margin-bottom: 40px;
+	// the box below the image
+	.ww-mb-caption {
+		padding: 10px 0 10px 5%;
+		background-color: #fff;
+		min-height: 75px;
+		// the text in the ww-mb-caption
+		.ww-mb-text {
+			font-size: 90%;
+			display: inline-block;
+			float: left;
+			width: 75%;
+			h1, h2, h3, h4, h5, h6, p, li {
+				margin-bottom: 0em;
+				line-height: normal;
+			}
+		}
+		// the button in the ww-mb-caption
+		.ww-mb-link {
+			width: 20%;
+			margin: 2.5% 2.5%;
+			float: right;
+		}
+	}
+	// To fit the buttons in on sm screen sizes, change the left and right padding to 1em
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		.ww-button {
+			padding: .8em 1em;
+		}	
+	}
+}
+
+/** FOOTER **/
+
+footer {
+	background-color: #726d6d;
+	padding: 20px 0;
+	p {
+		line-height: normal;
+		font-size: 90%;
+		letter-spacing: 1px;
+		margin-bottom: 0.4em;
+		color: $text-color-footer;
+		&.small {
+			font-size: 70%;
+		}
+		&:first-of-type {
+			color: $text-color-footer-hl;
+		}
+	}
+}
+
+
+
+
+

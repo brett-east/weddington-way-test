@@ -1,0 +1,14 @@
+{
+  "name": "weddington_way_project",
+  "version": "0.0.1",
+  "description": "This is a test project for Weddington Way",
+  "author": "Brett East",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-compass": "^2.0.3",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-util": "^3.0.4"
+  }
+}
